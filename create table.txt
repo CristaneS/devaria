@@ -1,0 +1,18 @@
+BEGIN TRANSACTION
+
+CREATE TABLE Cliente
+(
+    Codigo int Identity(1,1),
+    Nome VARCHAR(50) NOT NULL,
+    CPF CHAR(11) NULL,
+    Celular CHAR(11) NULL,
+    Telefone_Residencial CHAR(10) NULL,
+    Email VARCHAR(100) NULL,
+    Logadouro CHAR(11) NULL,
+    CONSTRAINT Nome PRIMARY KEY (Campo_Chave),
+    CONSTRAINT Nome FOREIGN KEY (Nome_Campo),
+        REFERENCES Tabela(Campo_Chave)
+)
+
+--COMMIT
+--ROLLBACK
